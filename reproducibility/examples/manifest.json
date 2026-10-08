@@ -1,0 +1,12 @@
+[
+  {
+    "example": "EG_GP-Optimized_393.15K",
+    "source_directory": "Opt_ES/ift_val_opt/workspace/0db3c29cb39c91388bf8246b23419048",
+    "note": "Copied archived example; coordinate histories/trajectories are not complete. Not a stand-alone restart."
+  },
+  {
+    "example": "DEC_Base_353.19K",
+    "source_directory": "Opt_ES/ift_val_no_opt/workspace/0b60b08441c96234bd55e463a107bcfb",
+    "note": "Copied archived example; coordinate histories/trajectories are not complete. Not a stand-alone restart."
+  }
+]

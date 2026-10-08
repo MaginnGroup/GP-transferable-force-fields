@@ -1,0 +1,254 @@
+[
+  {
+    "molecule": "MeOH",
+    "variant": "Base",
+    "recommended": false,
+    "parameter_source": "Opt_ES/analysis/at_00/MeOH/ExpVal/opt_res/ms_val_no_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.38869251367021,
+      "sigma_H1": 0.16627096784944,
+      "sigma_H2": 0.0,
+      "sigma_O1": 0.28566483690511,
+      "epsilon_C1": 0.55000680677844,
+      "epsilon_H1": 0.02629373254094,
+      "epsilon_H2": 0.0,
+      "epsilon_O1": 0.83070007160411
+    },
+    "export_origin": "reconstructed LJ-only Base export",
+    "directory": "Opt_ES/FF_params/MeOH/Base"
+  },
+  {
+    "molecule": "MeOH",
+    "variant": "GP-Optimized",
+    "recommended": true,
+    "parameter_source": "Opt_ES/analysis/at_00/MeOH/ExpVal/opt_res/ms_val_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.38461917149717,
+      "sigma_H1": 0.20094634153391,
+      "sigma_H2": 0.0,
+      "sigma_O1": 0.29518598921637,
+      "epsilon_C1": 0.52689462833454,
+      "epsilon_H1": 0.03225801752084,
+      "epsilon_H2": 0.0,
+      "epsilon_O1": 0.86030093764463
+    },
+    "export_origin": "archived GP-Optimized export from ES-FFO a41e279",
+    "directory": "Opt_ES/FF_params/MeOH/GP-Optimized"
+  },
+  {
+    "molecule": "EG",
+    "variant": "Base",
+    "recommended": false,
+    "parameter_source": "Opt_ES/analysis/at_00/EG/ExpVal/opt_res/ms_val_no_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.38831611733485,
+      "sigma_H1": 0.16003955207172,
+      "sigma_H2": 0.0,
+      "sigma_O1": 0.31033343733071,
+      "epsilon_C1": 0.19567655595659,
+      "epsilon_H1": 0.06648808753802,
+      "epsilon_H2": 0.0,
+      "epsilon_O1": 0.85954549168824
+    },
+    "export_origin": "reconstructed LJ-only Base export",
+    "directory": "Opt_ES/FF_params/EG/Base"
+  },
+  {
+    "molecule": "EG",
+    "variant": "GP-Optimized",
+    "recommended": true,
+    "parameter_source": "Opt_ES/analysis/at_00/EG/ExpVal/opt_res/ms_val_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.37687693584817,
+      "sigma_H1": 0.1800626504669,
+      "sigma_H2": 0.0,
+      "sigma_O1": 0.31507940549993,
+      "epsilon_C1": 0.26262595062422,
+      "epsilon_H1": 0.05536617456279,
+      "epsilon_H2": 0.0,
+      "epsilon_O1": 0.80895856363537
+    },
+    "export_origin": "archived GP-Optimized export from ES-FFO a41e279",
+    "directory": "Opt_ES/FF_params/EG/GP-Optimized"
+  },
+  {
+    "molecule": "Gly",
+    "variant": "Base",
+    "recommended": true,
+    "parameter_source": "Opt_ES/analysis/at_00/Gly/ExpVal/opt_res/ms_val_no_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.20544961383551,
+      "sigma_C2": 0.37743008797665,
+      "sigma_H1": 0.18925880538314,
+      "sigma_H2": 0.15445530978843,
+      "sigma_H3": 0.0,
+      "sigma_H4": 0.0,
+      "sigma_O1": 0.32967529649364,
+      "sigma_O2": 0.33116348217792,
+      "epsilon_C1": 0.2592964956603,
+      "epsilon_C2": 0.38368792296712,
+      "epsilon_H1": 0.0647422288729,
+      "epsilon_H2": 0.04552507155887,
+      "epsilon_H3": 0.0,
+      "epsilon_H4": 0.0,
+      "epsilon_O1": 0.88347326114421,
+      "epsilon_O2": 0.82436887533042
+    },
+    "export_origin": "reconstructed LJ-only Base export",
+    "directory": "Opt_ES/FF_params/Gly/Base"
+  },
+  {
+    "molecule": "Gly",
+    "variant": "GP-Optimized",
+    "recommended": false,
+    "parameter_source": "Opt_ES/analysis/at_00/Gly/ExpVal/opt_res/ms_val_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.20687153711138,
+      "sigma_C2": 0.37618970734281,
+      "sigma_H1": 0.18904291831096,
+      "sigma_H2": 0.15455902798758,
+      "sigma_H3": 0.0,
+      "sigma_H4": 0.0,
+      "sigma_O1": 0.32957088074028,
+      "sigma_O2": 0.33146184642797,
+      "epsilon_C1": 0.26456235860806,
+      "epsilon_C2": 0.3915325102766,
+      "epsilon_H1": 0.06476500263015,
+      "epsilon_H2": 0.04593875586522,
+      "epsilon_H3": 0.0,
+      "epsilon_H4": 0.0,
+      "epsilon_O1": 0.87826822493179,
+      "epsilon_O2": 0.83199643140579
+    },
+    "export_origin": "archived GP-Optimized export from ES-FFO a41e279",
+    "directory": "Opt_ES/FF_params/Gly/GP-Optimized"
+  },
+  {
+    "molecule": "DMF",
+    "variant": "Base",
+    "recommended": true,
+    "parameter_source": "Opt_ES/analysis/at_00/DMF/ExpVal/opt_res/ms_val_no_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.365639254254,
+      "sigma_C2": 0.39848306002572,
+      "sigma_H1": 0.22644611816413,
+      "sigma_H2": 0.15921003399472,
+      "sigma_O1": 0.25342145843138,
+      "sigma_N1": 0.36670910705226,
+      "epsilon_C1": 0.30021991110714,
+      "epsilon_C2": 0.29285071283217,
+      "epsilon_H1": 0.05317085360034,
+      "epsilon_H2": 0.07367976540338,
+      "epsilon_O1": 0.73578934632093,
+      "epsilon_N1": 0.40201345735457
+    },
+    "export_origin": "reconstructed LJ-only Base export",
+    "directory": "Opt_ES/FF_params/DMF/Base"
+  },
+  {
+    "molecule": "DMF",
+    "variant": "GP-Optimized",
+    "recommended": false,
+    "parameter_source": "Opt_ES/analysis/at_00/DMF/ExpVal/opt_res/ms_val_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.3385013818528,
+      "sigma_C2": 0.37475866077274,
+      "sigma_H1": 0.17720978690771,
+      "sigma_H2": 0.2693790562946,
+      "sigma_O1": 0.363740047133,
+      "sigma_N1": 0.23411542211451,
+      "epsilon_C1": 0.46955252053128,
+      "epsilon_C2": 0.4829348712804,
+      "epsilon_H1": 0.0656506931125,
+      "epsilon_H2": 0.02812033200702,
+      "epsilon_O1": 0.6236200569955,
+      "epsilon_N1": 0.65177636621991
+    },
+    "export_origin": "archived GP-Optimized export from ES-FFO a41e279",
+    "directory": "Opt_ES/FF_params/DMF/GP-Optimized"
+  },
+  {
+    "molecule": "DMSO",
+    "variant": "Base",
+    "recommended": true,
+    "parameter_source": "Opt_ES/analysis/at_00/DMSO/ExpVal/opt_res/ms_val_no_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.32361717864417,
+      "sigma_H1": 0.27266351759488,
+      "sigma_O1": 0.20195228639782,
+      "sigma_S1": 0.39601564486986,
+      "epsilon_C1": 0.58826241192942,
+      "epsilon_H1": 0.05820651496641,
+      "epsilon_O1": 0.6364717008407,
+      "epsilon_S1": 0.97486585346916
+    },
+    "export_origin": "reconstructed LJ-only Base export",
+    "directory": "Opt_ES/FF_params/DMSO/Base"
+  },
+  {
+    "molecule": "DMSO",
+    "variant": "GP-Optimized",
+    "recommended": false,
+    "parameter_source": "Opt_ES/analysis/at_00/DMSO/ExpVal/opt_res/ms_val_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.22247185352785,
+      "sigma_H1": 0.21961433506045,
+      "sigma_O1": 0.32010669144229,
+      "sigma_S1": 0.44088189405164,
+      "epsilon_C1": 0.59591595522664,
+      "epsilon_H1": 0.08147294942079,
+      "epsilon_O1": 0.81394095512874,
+      "epsilon_S1": 0.9708845471698
+    },
+    "export_origin": "archived GP-Optimized export from ES-FFO a41e279",
+    "directory": "Opt_ES/FF_params/DMSO/GP-Optimized"
+  },
+  {
+    "molecule": "DEC",
+    "variant": "Base",
+    "recommended": false,
+    "parameter_source": "Opt_ES/analysis/at_00/DEC/ExpVal/opt_res/ms_val_no_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.27657624757854,
+      "sigma_C2": 0.38158509147428,
+      "sigma_C3": 0.37922067464425,
+      "sigma_H1": 0.26836823824068,
+      "sigma_H2": 0.24777027944054,
+      "sigma_O1": 0.23428116052096,
+      "sigma_O2": 0.31248365997989,
+      "epsilon_C1": 0.60771410302577,
+      "epsilon_C2": 0.41424889749035,
+      "epsilon_C3": 0.3791304098857,
+      "epsilon_H1": 0.03615637663471,
+      "epsilon_H2": 0.07785018094328,
+      "epsilon_O1": 0.83065733057722,
+      "epsilon_O2": 0.65926549857443
+    },
+    "export_origin": "reconstructed LJ-only Base export",
+    "directory": "Opt_ES/FF_params/DEC/Base"
+  },
+  {
+    "molecule": "DEC",
+    "variant": "GP-Optimized",
+    "recommended": true,
+    "parameter_source": "Opt_ES/analysis/at_00/DEC/ExpVal/opt_res/ms_val_opt/ms_data.csv",
+    "parameters_nm_kJ_per_mol": {
+      "sigma_C1": 0.33328265708678,
+      "sigma_C2": 0.39620328795132,
+      "sigma_C3": 0.2443505793032,
+      "sigma_H1": 0.23968980201612,
+      "sigma_H2": 0.23967869730127,
+      "sigma_O1": 0.36012874028428,
+      "sigma_O2": 0.26026941620214,
+      "epsilon_C1": 0.57616258222375,
+      "epsilon_C2": 0.19262249518699,
+      "epsilon_C3": 0.52565981962226,
+      "epsilon_H1": 0.06312384284603,
+      "epsilon_H2": 0.01718089792759,
+      "epsilon_O1": 0.37856157621086,
+      "epsilon_O2": 1.08053402600295
+    },
+    "export_origin": "archived GP-Optimized export from ES-FFO a41e279",
+    "directory": "Opt_ES/FF_params/DEC/GP-Optimized"
+  }
+]

@@ -6,6 +6,10 @@ Authors: Montana N. Carlozo, Alexander W. Dowling, and Edward J. Maginn
 
 **NOTE**: We use Signac and signac flow (`<https://signac.io/>`) to manage the setup and execution of each workflow. These instructions assume a working knowledge of that software. The most complete version of this work is the for_pub branch.
 
+## Force fields and simulation inputs
+
+Both Base and GP-Optimized parameter files for all six molecules are indexed in [Opt_ES/FF_params](Opt_ES/FF_params/README.md), with explicit provenance and recommended-variant labels. [Reproducibility instructions](reproducibility/README.md) provide GROMACS stage inputs, two archived examples, Cassandra generator settings, units, 1-4 scaling and the limits of the locally archived inputs. Run `python3 reproducibility/check_inputs.py` to check their consistency without running simulations.
+
 ## Citation
 This work is currently in preparation and has not yet been published. Please cite the following when referring to this work:
 
