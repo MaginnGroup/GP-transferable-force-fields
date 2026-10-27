@@ -1,9 +1,9 @@
 # block_average
-Implement the block averaging procedure of Flyvbjerg and Peterson
+Implement the block averaging procedure of Flyvbjerg and Petersen
 
 A simple repository that performs block averaging. Based upon the method from:
 
-H. Flyvbjerg and H.G. Peterson. Error estimates on averages of correlated data. J. Chem. Phys. 91:461-466, 1989.
+H. Flyvbjerg and H.G. Petersen. Error estimates on averages of correlated data. J. Chem. Phys. 91:461-466, 1989.
 
 The method is described in Appendix D.3 of Frenkel and Smit (Understanding Molecular Simulation).
 

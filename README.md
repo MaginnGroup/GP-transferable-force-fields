@@ -2,7 +2,7 @@
 Authors: Montana N. Carlozo, Alexander W. Dowling, and Edward J. Maginn
 <!-- Introduction: Provide a brief introduction to the project, including its purpose, goals, and any key features or benefits. -->
 ## Introduction
-**ES-FFO** is a repository used to rapidly calibrate the LJ parameters of electrolyte solvent forcefields given experimental data. The key feature of this work is using machine learning tools in the form of Gaussian processes (GPs) which allow us to cheaply estimate the results of a molecular simulation given temperature state points and thermophysical property data. This workflow combines the approaches of Wang et al., 2023, J. Chem. Theory Comput. and Carlozo et al., 2025, Digital Discovery to create one repository to build GP models and optimize parameters for electrolyte solvent FFs. **ES-FFO-Public** is based on the "for_sub" branch of private repository **ES-FFO**.
+**ES-FFO** is a repository used to rapidly calibrate the LJ parameters of electrolyte solvent force fields given experimental data. The key feature of this work is using machine learning tools in the form of Gaussian processes (GPs) which allow us to cheaply estimate the results of a molecular simulation given temperature state points and thermophysical property data. This workflow combines the approaches of Wang et al., 2023, J. Chem. Theory Comput. and Carlozo et al., 2025, Digital Discovery to create one repository to build GP models and optimize parameters for electrolyte solvent FFs. **ES-FFO-Public** is based on the "for_sub" branch of private repository **ES-FFO**.
 
 **NOTE**: We use Signac and signac flow (`<https://signac.io/>`) to manage the setup and execution of each workflow. These instructions assume a working knowledge of that software. The most complete version of this work is the for_pub branch.
 
@@ -22,10 +22,10 @@ The repository is organized as follows: <br />
 ES-FFO/ is the top level directory. It contains: <br />
 1. .gitignore prevents large files from the signac workflow and plots from being tracked by git and prevents  tracking of other unimportant files. <br />
 2. utils/ contains functions used by all pieces of this workflow including molecule experimental data and reference parameters <br />
-3. block_averages/ contains a code for block averaging via the methods in H. Flyvbjerg and H.G. Peterson. Error estimates on averages of correlated data. J. Chem. Phys. 91:461-466, 1989.<br />
+3. block_averages/ contains code for block averaging via the methods in H. Flyvbjerg and H.G. Petersen. Error estimates on averages of correlated data. J. Chem. Phys. 91:461-466, 1989.<br />
 4. fffit/ contains another set of utility functions used by multiple aspects of this workflow. <br />
-5. Build_GPs/ contains the workflow runs and analyzes results from applying the methods modified from those in Wang et al. 2023 to create Base FFs <br />
-6. Opt_ES/ contains the workflow runs and analyzes results from applying the methods in Carlozo et al. 2025. to create GP-optimized FFs <br />
+5. Build_GPs/ contains the workflow that runs and analyzes results from applying the methods modified from those in Wang et al. 2023 to create Base FFs <br />
+6. Opt_ES/ contains the workflow that runs and analyzes results from applying the methods in Carlozo et al. 2025. to create GP-optimized FFs <br />
 7. Opt_ES/ Also contains the molecular simulation results and analysis of the FF(s) developed in steps 5 and 6.  <br />
 8. hfcs-fffit.yml is the environment for running this workflow. <br />
 9. submit_jobs is a shell script for submitting jobs to the cluster. <br />
@@ -33,11 +33,11 @@ ES-FFO/ is the top level directory. It contains: <br />
 11. make_corr_figs_all_molec.py is a python script for creating correlation figures for all molecules. Figure 12, Figure 14, and SI Figure S12 in the main text. <br />
 12. make_corr_figs_one_molec.py is a python script for creating correlation figures for individual molecules. SI Figures S1-S6 and SI Figures S13-S24 in the main text. <br />
 13. make_GP_vs_sim_and_sens.py is a python script for creating figures comparing GP and actual predictions and generating the results for individual molecule sensitivity analyses. Figure 9, SI Figure S11, and SI Tables S4-S15 in the main text. <br />
-14. make_ift_val_figs.py is a python script for creating visualizations of the interfactial tension boxes for all ST simulations. <br />
+14. make_ift_val_figs.py is a python script for creating visualizations of the interfacial tension boxes for all ST simulations. <br />
 15. make_param_comp_figs.py is a python script for creating parameter comparison figures. Figures 10-11 and SI Figures S7-S10 in the main text. <br />
 16. make_pareto_comp_figs.py is a python script for visualizing differences between pareto-optimal LJ parameter sets in ST (and LD) iterations. Figure 13 in the main text. <br />
 17. make_svd_sensitivity.py is a python script for creating visualizations of the SVD sensitivity analysis. SI Tables S4-S15 in the main text. <br />
-18. Claude_Audit/ contains the files generated by Claude to audit the experimental data is esolvs.py and generate the data for Tables 4, 8, and 9 in the main text. <br />
+18. Claude_Audit/ contains the files generated by Claude to audit the experimental data in esolvs.py and generate the data for Tables 4, 8, and 9 in the main text. <br />
 Note that all workspace/ subdirectories below include one example signac workspace with some example input data and key simulation validation figures where appropriate.
 
 
@@ -122,15 +122,15 @@ This directory contains all functions related to running the optimization workfl
 4. utilsOpt/signac.py: Functions for extracting signac data
 
 #### Claude_Audit/
-This directory contains all functions related to the Claude Code Audit of thi repository including:
+This directory contains all functions related to the Claude Code Audit of this repository including:
 1. scripts/: Includes relevant scripts generated by Claude Code
 2. refprop_output/: Includes ethyleneglycol_refprop_montana.txt and methanol_refprop_montana.txt, the REFPROP property data for EG and MeOH
-3. figures/: Figures (baseline_vs_exp_*.png/.pdf) comparing experimental data is esolvs.py to other data sources for each molecule
+3. figures/: Figures (baseline_vs_exp_*.png/.pdf) comparing experimental data in esolvs.py to other data sources for each molecule
 4.audit_data/: All data necessary for the files in scripts/ and all data generated from the files in scripts/
 5. refs.bib: References used in the main text
 
 #### Claude_Audit/audit_data
-This directory contains all functions related to the Claude Code Audit of thi repository including:
+This directory contains all functions related to the Claude Code Audit of this repository including:
 1. baseline_agreement_stats.py: Comparison of experimental data sources
 2. digitized_litff.csv: The digitized values for the Vahid & Maginn, Jahn et al., and Gonzalez-Salgado & Vega sources
 3. litexp_*.csv: The literature experimental data from various FF development sources
@@ -149,7 +149,7 @@ This directory contains all functions related to the Claude Code Audit of thi re
 16. audit_table3_refdata.csv: Claude audit for Table 3 in the main text
 
 #### Claude_Audit/scripts
-This directory contains all functions related to the Claude Code Audit of thi repository including:
+This directory contains all functions related to the Claude Code Audit of this repository including:
 1. build_master_ff_predictions.py: Creates a consolidated list of all FF predictions
 2. build_reference_values_all.py: Generated the R1 and R2 metric reference values used in Tables 8 and 9 and SI Tables S2 and S3
 3. extract_student_ff_values.py: Extracts FF ms data from ES-FFO/Opt_ES/analysis/
@@ -279,7 +279,7 @@ To run generalized FF calibration, follow the following steps:
    ```  
      python project.py status
    ```   
-Note: Step 2 operation OptGenFF multiple operations in series. Alternatively, the following can be run one at a time:
+Note: Step 2 operation OptGenFF runs multiple operations in series. Alternatively, the following can be run one at a time:
 4. Alternative submission
    ```
      python project.py submit -o gen_pareto_sets --bundle=12 --parallel
@@ -298,7 +298,7 @@ To validate the generalized FF from above, follow the following steps:
      conda activate hfcs-fffit
      cd Opt_ES/
    ```    
-2. Run GEMC validation simulations (Pvap, rho_v, Hvap) - Simulatenous with Steps 5-7
+2. Run GEMC validation simulations (Pvap, rho_v, Hvap) - Simultaneously with Steps 5-7
    - **Note: rm -r workspace/ signac_project_document.json signac.rc will remove everything and allow you to start fresh if you mess up**
   ```
      cd Opt_ES/gemc_val_xxx/

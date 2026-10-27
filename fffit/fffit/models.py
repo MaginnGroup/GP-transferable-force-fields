@@ -42,7 +42,7 @@ def buildGP(x_train, y_train, gpConfig, retrain = 0):
                 Whether to use a White kernel (gpflow.kernels.White).
                 The default is True.
             . trainLikelihood : boolean
-                Whether to treat the variance of the likelihood of the modeal
+                Whether to treat the variance of the likelihood of the model
                 as a trainable (or fitting) parameter. If False, this value is
                 fixed at 10^-5.
                 The default is True.
@@ -214,7 +214,7 @@ def run_gpflow_scipy(x_train, y_train, gpConfig, restarts = 1):
                 Whether to use a White kernel (gpflow.kernels.White).
                 The default is True.
             . trainLikelihood : boolean
-                Whether to treat the variance of the likelihood of the modeal
+                Whether to treat the variance of the likelihood of the model
                 as a trainable (or fitting) parameter. If False, this value is
                 fixed at 10^-5.
                 The default is True.
