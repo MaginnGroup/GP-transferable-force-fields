@@ -1,0 +1,5 @@
+# Preserve original fixed-width PDB padding and copied simulator formatting.
+# These rules affect whitespace diagnostics only, not checkout/file bytes.
+Opt_ES/FF_params/**/species1.pdb whitespace=-blank-at-eol
+Opt_ES/FF_params/**/system.top whitespace=-blank-at-eol
+reproducibility/examples/** whitespace=-blank-at-eol

@@ -1,0 +1,56 @@
+molecule      variant       block                    weighting  rows  free_parameters  rank_1e-04  rank_1e-06  rank_1e-08      s_max    s_min  condition_full  condition_retained_1e6
+    MeOH         Base liq_density           objective_diagonal     5                6           5           5           5 158.916554 0.000000             NaN             3125.168818
+    MeOH GP-Optimized liq_density           objective_diagonal     5                6           5           5           5 139.549357 0.000000             NaN             2160.982027
+    MeOH         Base   surf_tens           objective_diagonal     5                6           4           4           4 129.438120 0.000000             NaN              700.624134
+    MeOH GP-Optimized   surf_tens           objective_diagonal     5                6           4           4           4 205.142337 0.000000             NaN              197.432731
+    MeOH         Base    combined           objective_diagonal    10                6           6           6           6 171.639568 0.094815     1810.265170             1810.265170
+    MeOH         Base    combined measurement_plus_GP_diagonal    10                6           6           6           6 160.058741 0.087049     1838.728647             1838.728647
+    MeOH GP-Optimized    combined           objective_diagonal    10                6           6           6           6 225.307653 0.050879     4428.287531             4428.287531
+    MeOH GP-Optimized    combined measurement_plus_GP_diagonal    10                6           6           6           6 153.533256 0.030843     4977.951190             4977.951190
+molecule      variant       block                    weighting  rows  free_parameters  rank_1e-04  rank_1e-06  rank_1e-08      s_max    s_min  condition_full  condition_retained_1e6
+      EG         Base liq_density           objective_diagonal     5                6           3           4           5 155.087806 0.000000             NaN           357519.393826
+      EG GP-Optimized liq_density           objective_diagonal     5                6           3           4           5 150.497954 0.000000             NaN           279409.084097
+      EG         Base   surf_tens           objective_diagonal     5                6           1           3           3 196.243534 0.000000             NaN           499562.156271
+      EG GP-Optimized   surf_tens           objective_diagonal     5                6           1           3           3 214.561733 0.000000             NaN           971028.433069
+      EG         Base    combined           objective_diagonal    10                6           3           5           6 239.559942 0.000121    1.976619e+06           101617.603772
+      EG         Base    combined measurement_plus_GP_diagonal    10                6           4           5           6 175.629513 0.000120    1.468429e+06           149852.878039
+      EG GP-Optimized    combined           objective_diagonal    10                6           3           5           6 252.049416 0.000193    1.304831e+06            83621.143456
+      EG GP-Optimized    combined measurement_plus_GP_diagonal    10                6           3           6           6 174.939643 0.000189    9.273579e+05           927357.924065
+molecule      variant       block                    weighting  rows  free_parameters  rank_1e-04  rank_1e-06  rank_1e-08      s_max  s_min condition_full  condition_retained_1e6
+     Gly         Base liq_density           objective_diagonal     5               12           3           5           5 126.096794    0.0           None           351146.852922
+     Gly GP-Optimized liq_density           objective_diagonal     5               12           3           5           5 126.430186    0.0           None           334861.305643
+     Gly         Base   surf_tens           objective_diagonal     5               12           5           5           5 362.220032    0.0           None             2176.176526
+     Gly GP-Optimized   surf_tens           objective_diagonal     5               12           5           5           5 358.181594    0.0           None             2042.506528
+     Gly         Base    combined           objective_diagonal    10               12           8           9          10 378.304568    0.0           None           323997.607321
+     Gly         Base    combined measurement_plus_GP_diagonal    10               12           7           9          10 129.348798    0.0           None           115721.712264
+     Gly GP-Optimized    combined           objective_diagonal    10               12           8           9          10 374.519896    0.0           None           328228.222941
+     Gly GP-Optimized    combined measurement_plus_GP_diagonal    10               12           7           9          10 129.640051    0.0           None           117361.702641
+molecule      variant       block                    weighting  rows  free_parameters  rank_1e-04  rank_1e-06  rank_1e-08      s_max  s_min condition_full  condition_retained_1e6
+     DMF         Base liq_density           objective_diagonal     5               12           3           4           5  68.478514    0.0           None           103425.038043
+     DMF GP-Optimized liq_density           objective_diagonal     5               12           3           4           5  68.215985    0.0           None            46026.906545
+     DMF         Base   surf_tens           objective_diagonal     5               12           1           2           3 177.967384    0.0           None            14495.113687
+     DMF GP-Optimized   surf_tens           objective_diagonal     5               12           1           3           3 172.360857    0.0           None           353754.078007
+     DMF         Base    combined           objective_diagonal    10               12           4           6           8 182.059706    0.0           None           290888.165449
+     DMF         Base    combined measurement_plus_GP_diagonal    10               12           4           6           8 101.883339    0.0           None           163067.436042
+     DMF GP-Optimized    combined           objective_diagonal    10               12           4           7           8 178.578483    0.0           None           514770.526630
+     DMF GP-Optimized    combined measurement_plus_GP_diagonal    10               12           4           7           8 105.468310    0.0           None           567080.142159
+molecule      variant       block                    weighting  rows  free_parameters  rank_1e-04  rank_1e-06  rank_1e-08      s_max        s_min  condition_full  condition_retained_1e6
+    DMSO         Base liq_density           objective_diagonal     5                8           3           4           5  83.600689 0.000000e+00             NaN           152270.748604
+    DMSO GP-Optimized liq_density           objective_diagonal     5                8           3           4           5  81.567495 0.000000e+00             NaN           246847.297798
+    DMSO         Base   surf_tens           objective_diagonal     5                8           1           1           1 131.412346 0.000000e+00             NaN                1.000000
+    DMSO GP-Optimized   surf_tens           objective_diagonal     5                8           1           1           1 175.065926 0.000000e+00             NaN                1.000000
+    DMSO         Base    combined           objective_diagonal    10                8           4           5           6 138.430461 1.020536e-09    1.356449e+11           515931.332873
+    DMSO         Base    combined measurement_plus_GP_diagonal    10                8           4           5           6 107.394946 7.392655e-10    1.452725e+11           400391.940052
+    DMSO GP-Optimized    combined           objective_diagonal    10                8           4           5           5 181.162439 8.681667e-09    2.086724e+10           627196.814072
+    DMSO GP-Optimized    combined measurement_plus_GP_diagonal    10                8           4           5           6 138.240280 6.400891e-09    2.159704e+10           478894.901097
+molecule      variant       block                    weighting  rows  free_parameters  rank_1e-04  rank_1e-06  rank_1e-08      s_max  s_min condition_full  condition_retained_1e6
+     DEC         Base liq_density           objective_diagonal     5               14           4           5           5  14.452762    0.0           None            11592.921881
+     DEC GP-Optimized liq_density           objective_diagonal     5               14           4           5           5  11.348880    0.0           None            26657.646861
+     DEC         Base   surf_tens           objective_diagonal     5               14           3           3           3 156.121328    0.0           None              416.261404
+     DEC GP-Optimized   surf_tens           objective_diagonal     5               14           3           3           3 214.629630    0.0           None             1801.540496
+     DEC         Base    combined           objective_diagonal    10               14           7           8           8 156.514376    0.0           None           141117.594746
+     DEC         Base    combined measurement_plus_GP_diagonal    10               14           7           8           8  86.189656    0.0           None            77714.758787
+     DEC GP-Optimized    combined           objective_diagonal    10               14           6           8           8 214.705705    0.0           None           554029.194945
+     DEC GP-Optimized    combined measurement_plus_GP_diagonal    10               14           6           8           8  93.244514    0.0           None           240834.285578
+<HOME>/opt/anaconda3/envs/gpbo-dev/lib/python3.10/site-packages/gpflow/versions.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources

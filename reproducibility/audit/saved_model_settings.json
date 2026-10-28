@@ -1,0 +1,200 @@
+[
+  {
+    "molecule": "MeOH",
+    "property": "liq_density",
+    "source": "Build_GPs/analysis/MeOH/ld_iters/iter-3/gp_models.pkl",
+    "source_sha256": "a48f0afbcaf44abeb21feae96fbe24be1b5910c80b3a837f7b98ae09f63a38ff",
+    "components": [
+      "RationalQuadratic"
+    ],
+    "mean": "Linear",
+    "white_variances": [],
+    "white_trainable": [],
+    "likelihood_variance": 1.9038643764461897e-05,
+    "likelihood_trainable": true
+  },
+  {
+    "molecule": "MeOH",
+    "property": "surf_tens",
+    "source": "Build_GPs/analysis/MeOH/vle_iters/iter-1/gp_models.pkl",
+    "source_sha256": "7ad0e1b4fbe82284ecc95cffcc0aaeabda56072147c35b89d1e3139c864b291c",
+    "components": [
+      "Matern32",
+      "White"
+    ],
+    "mean": "MaskedLinear",
+    "white_variances": [
+      0.0018463946571183312
+    ],
+    "white_trainable": [
+      false
+    ],
+    "likelihood_variance": 1.0000000000000004e-05,
+    "likelihood_trainable": false
+  },
+  {
+    "molecule": "EG",
+    "property": "liq_density",
+    "source": "Build_GPs/analysis/EG/ld_iters/iter-2/gp_models.pkl",
+    "source_sha256": "20d52cf4ce63654938e0f407c04a76f8c5fae129e9aae00f91af5cd0dbe9e88c",
+    "components": [
+      "RationalQuadratic"
+    ],
+    "mean": "Linear",
+    "white_variances": [],
+    "white_trainable": [],
+    "likelihood_variance": 0.0007804811079567647,
+    "likelihood_trainable": true
+  },
+  {
+    "molecule": "EG",
+    "property": "surf_tens",
+    "source": "Build_GPs/analysis/EG/vle_iters/iter-1/gp_models.pkl",
+    "source_sha256": "a3c95a74724bb7a8201065216a0b3f6c3733d9a2401719f9cf7176dfa2251cff",
+    "components": [
+      "Matern32",
+      "White"
+    ],
+    "mean": "MaskedLinear",
+    "white_variances": [
+      0.1585239134539127
+    ],
+    "white_trainable": [
+      false
+    ],
+    "likelihood_variance": 1.0000000000000004e-05,
+    "likelihood_trainable": false
+  },
+  {
+    "molecule": "Gly",
+    "property": "liq_density",
+    "source": "Build_GPs/analysis/Gly/ld_iters/iter-7/gp_models.pkl",
+    "source_sha256": "2516e18596ea2d81385a5dddd99639d7f6e064055cf1985dc8197a20e57b0d43",
+    "components": [
+      "RationalQuadratic"
+    ],
+    "mean": "Linear",
+    "white_variances": [],
+    "white_trainable": [],
+    "likelihood_variance": 0.16190567744430345,
+    "likelihood_trainable": true
+  },
+  {
+    "molecule": "Gly",
+    "property": "surf_tens",
+    "source": "Build_GPs/analysis/Gly/vle_iters/iter-1/gp_models.pkl",
+    "source_sha256": "bec5afbfbd941b3b101b4f3b1845a367e223c1bb78038964d857945cdda815ec",
+    "components": [
+      "Matern32",
+      "White"
+    ],
+    "mean": "MaskedLinear",
+    "white_variances": [
+      8.32800681396236
+    ],
+    "white_trainable": [
+      false
+    ],
+    "likelihood_variance": 1.0000000000000004e-05,
+    "likelihood_trainable": false
+  },
+  {
+    "molecule": "DMF",
+    "property": "liq_density",
+    "source": "Build_GPs/analysis/DMF/ld_iters/iter-2/gp_models.pkl",
+    "source_sha256": "cec8dc7ab89f677c2bae7969ffe2507bf669647010699a41cd56743dc054dd14",
+    "components": [
+      "RationalQuadratic"
+    ],
+    "mean": "Linear",
+    "white_variances": [],
+    "white_trainable": [],
+    "likelihood_variance": 0.0030575727327535464,
+    "likelihood_trainable": true
+  },
+  {
+    "molecule": "DMF",
+    "property": "surf_tens",
+    "source": "Build_GPs/analysis/DMF/vle_iters/iter-1/gp_models.pkl",
+    "source_sha256": "5519b88598b74503eed7839d288bf023299dface53e9eb169e440e89fa8b02ec",
+    "components": [
+      "Matern32",
+      "White"
+    ],
+    "mean": "Linear",
+    "white_variances": [
+      0.1620487220109013
+    ],
+    "white_trainable": [
+      false
+    ],
+    "likelihood_variance": 1.0000000000000004e-05,
+    "likelihood_trainable": false
+  },
+  {
+    "molecule": "DMSO",
+    "property": "liq_density",
+    "source": "Build_GPs/analysis/DMSO/ld_iters/iter-2/gp_models.pkl",
+    "source_sha256": "4130a8f8241f16d60160c4827527837cddc4453d142492f980495ba0fa4c45fb",
+    "components": [
+      "RationalQuadratic"
+    ],
+    "mean": "Linear",
+    "white_variances": [],
+    "white_trainable": [],
+    "likelihood_variance": 0.002082364534950267,
+    "likelihood_trainable": true
+  },
+  {
+    "molecule": "DMSO",
+    "property": "surf_tens",
+    "source": "Build_GPs/analysis/DMSO/vle_iters/iter-1/gp_models.pkl",
+    "source_sha256": "bb564f4a63591cb84381bcc1039c0e60d4f9b73a8a69728c25e7a23480ca049e",
+    "components": [
+      "Matern32",
+      "White"
+    ],
+    "mean": "MaskedLinear",
+    "white_variances": [
+      0.0863982901091183
+    ],
+    "white_trainable": [
+      false
+    ],
+    "likelihood_variance": 1.0000000000000004e-05,
+    "likelihood_trainable": false
+  },
+  {
+    "molecule": "DEC",
+    "property": "liq_density",
+    "source": "Build_GPs/analysis/DEC/ld_iters/iter-2/gp_models.pkl",
+    "source_sha256": "cbe402e8dc266685e25975fe3f93cd66134e0f6f8cdf16b034b7fc33bbdfff7c",
+    "components": [
+      "RationalQuadratic"
+    ],
+    "mean": "Linear",
+    "white_variances": [],
+    "white_trainable": [],
+    "likelihood_variance": 0.00017107785183806471,
+    "likelihood_trainable": true
+  },
+  {
+    "molecule": "DEC",
+    "property": "surf_tens",
+    "source": "Build_GPs/analysis/DEC/vle_iters/iter-1/gp_models.pkl",
+    "source_sha256": "68473f1cb2107db534a30c4546a6c17e3830bee61aae0432977b2993a4837a0e",
+    "components": [
+      "Matern32",
+      "White"
+    ],
+    "mean": "MaskedLinear",
+    "white_variances": [
+      0.005268051407266552
+    ],
+    "white_trainable": [
+      false
+    ],
+    "likelihood_variance": 1.0000000000000004e-05,
+    "likelihood_trainable": false
+  }
+]

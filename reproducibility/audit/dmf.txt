@@ -1,0 +1,7 @@
+Verified and regenerated all 25 DMF candidate points.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	<HOME>/.cache/fontconfig
+	<HOME>/.fontconfig
+Matplotlib is building the font cache; this may take a moment.

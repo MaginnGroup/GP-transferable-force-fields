@@ -14,7 +14,7 @@ nstlog                   = 1000
 nstxout-compressed       = 10000
 
 
-; Nonbonded settings 
+; Nonbonded settings
 cutoff-scheme            = Verlet    ; Buffered neighbor searching
 verlet-buffer-tolerance  = 1e-5
 ns_type                  = grid      ; search neighboring grid cells
@@ -45,7 +45,7 @@ pcoupltype              = semiisotropic             ; uniform scaling of box vec
 tau_p                   = 2.0                       ; time constant, in ps
 compressibility         = 0 4.5e-5                  ; isothermal compressibility of water, bar^-1
 ref_p                   = 0.056304 0.056304                   ; reference pressure, in bar
-nstpcouple              = 1 
+nstpcouple              = 1
 ;refcoord_scaling       = com
 
 ; Periodic boundary conditions

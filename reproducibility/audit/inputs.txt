@@ -1,0 +1,1 @@
+Verified 12 exports, 132 LJ values, neutral charges, topology/MCF unit conversion, 1-4 scaling and two archived MDP examples. No simulations run.
