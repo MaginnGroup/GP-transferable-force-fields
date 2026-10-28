@@ -55,7 +55,9 @@ def main():
                               columns=["train_rows", "test_rows", "iterations", "MAE", "RMSE", "coverage95",
                                        "mean_predictive_sd", "training_loss", "selected_restart", "white_noise_variance_scaled"],
                               keys=["molecule", "fold"]))
-        for path in sorted((REFERENCE / "grouped_validation_3starts").glob("*_parameters.json")):
+        parameter_paths = [REFERENCE / "grouped_validation_3starts" / f"{mol}_fold{fold}_parameters.json"
+                           for mol in ("MeOH", "EG", "Gly", "DMF", "DMSO", "DEC") for fold in range(5)]
+        for path in parameter_paths:
             other = args.grouped_results / "grouped_validation_3starts" / path.name
             old, new = json.loads(path.read_text()), json.loads(other.read_text())
             if old.keys() != new.keys():

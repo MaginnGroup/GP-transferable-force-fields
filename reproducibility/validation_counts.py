@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MOLECULES = ("MeOH", "EG", "Gly", "DMF", "DMSO", "DEC")
 VARIANTS = {"Base": "ms_val_no_opt", "GP-Optimized": "ms_val_opt"}
 PROPERTIES = ("liq_density", "surf_tens", "vap_density", "Pvap", "Hvap")
+UNITS = dict(liq_density="kg/m3", surf_tens="mN/m", vap_density="kg/m3", Pvap="bar", Hvap="kJ/kg")
 
 
 def number(value):
@@ -74,8 +75,13 @@ def audit(root):
                         source=raw_path.relative_to(root).as_posix()))
                     mean = statistics.fmean(values) if values else math.nan
                     sd = statistics.pstdev(values) if values else math.nan
-                    summaries.append(dict(**base, usable_replicates=len(values), mean=mean,
-                        population_sd=sd, errorbar_halfwidth=1.96 * sd))
+                    pressure = prop == "Pvap"
+                    plot_mean = math.log(100 * mean) if pressure and mean > 0 else (math.nan if pressure else mean)
+                    plot_halfwidth = 1.96 * sd / mean if pressure and mean > 0 else (math.nan if pressure else 1.96 * sd)
+                    summaries.append(dict(**base, usable_replicates=len(values), raw_units=UNITS[prop], mean=mean,
+                        population_sd=sd, raw_unit_1_96_sd=1.96 * sd,
+                        plot_scale="ln(Pvap/kPa)" if pressure else UNITS[prop],
+                        plot_mean=plot_mean, plot_errorbar_halfwidth=plot_halfwidth))
                     for row in rows:
                         other = processed_by_key.get(key(row), {})
                         a, b = number(row[prop]), number(other.get("sim_" + prop))

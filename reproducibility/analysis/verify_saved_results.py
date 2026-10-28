@@ -43,6 +43,12 @@ def verify(root, reference):
     predictions = read_csv(reference / "grouped_validation_predictions_3starts.csv", inputs, root)
     expected_summary = read_csv(reference / "grouped_validation_summary.csv", inputs, root).set_index("molecule")
     all_metrics = read_csv(reference / "grouped_validation_metrics_3starts.csv", inputs, root)
+    require(len(predictions) == 745 and set(predictions.molecule) == set(MOLECULES),
+            "Expected all 745 grouped predictions across six molecules")
+    require(len(all_metrics) == 36 and not all_metrics.duplicated(["molecule", "fold"]).any(),
+            "Expected six original tests and 30 distinct grouped-fold metrics")
+    require(set(expected_summary.index) == set(MOLECULES) and expected_summary.index.is_unique,
+            "Expected one summary per molecule")
     folds_dir = reference / "grouped_validation_3starts"
     protocol = json.loads((folds_dir / "protocol.json").read_text())
     require(protocol["seed"] == 42 and protocol["folds"] == 5 and protocol["maxiter"] == 2000,

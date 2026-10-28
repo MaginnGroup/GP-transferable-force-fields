@@ -208,4 +208,9 @@ Opt_ES/opt_at_params_new/workspace/*
 *Opt_ES/gemc_val_*/workspace/*/species1/frag*
 *.signac*
 *signac_project_document*
+
+# Final grouped-validation reference files include fold2 in their names.
+# Keep these even though the historical *old2* exclusion matches that substring.
+!reproducibility/analysis/reference/**/*.csv
+!reproducibility/analysis/reference/**/*.json
 *Project-bundle*

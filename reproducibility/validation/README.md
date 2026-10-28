@@ -35,7 +35,12 @@ mean. A single usable replicate has population SD zero, which does not establish
 zero physical uncertainty. No usable replicates produces blank summary values.
 
 [replicate_summaries.csv](replicate_summaries.csv) records the independently
-recomputed means, population SDs and plotted halfwidths. These calculations do
+recomputed means, population SDs and raw-unit 1.96-times-SD halfwidths. Units are
+kg/m3 for densities, mN/m for surface tension, bar for vapor pressure, and kJ/kg
+for vaporization enthalpy. The pressure panel plots `ln(Pvap/kPa)`: its position
+is `ln(100 * mean_pressure_bar)` and its halfwidth is `1.96 * SD / mean`, as in
+the plotting code. The additional `plot_*` columns record this transformation;
+the other property axes use their stored units. These calculations do
 not use the historical within-run `surf_tens_unc` fields. Critical-point fits and
 their uncertainties are separate calculations and are not covered by this
 counting script.
