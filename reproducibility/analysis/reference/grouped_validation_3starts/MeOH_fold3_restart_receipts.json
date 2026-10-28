@@ -1,0 +1,23 @@
+[
+  {
+    "restart": 0,
+    "loss": -144.41397674947166,
+    "success": true,
+    "iterations": 200,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  {
+    "restart": 1,
+    "loss": -144.4130847730872,
+    "success": true,
+    "iterations": 346,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  {
+    "restart": 2,
+    "loss": -96.72028346246341,
+    "success": true,
+    "iterations": 78,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  }
+]

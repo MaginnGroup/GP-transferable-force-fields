@@ -1,0 +1,23 @@
+[
+  {
+    "restart": 0,
+    "loss": 67.6882349476399,
+    "success": false,
+    "iterations": 2000,
+    "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+  },
+  {
+    "restart": 1,
+    "loss": 68.08559912958039,
+    "success": true,
+    "iterations": 715,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  {
+    "restart": 2,
+    "loss": 75.44299079530767,
+    "success": true,
+    "iterations": 572,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  }
+]
