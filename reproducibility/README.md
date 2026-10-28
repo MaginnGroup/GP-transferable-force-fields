@@ -8,6 +8,13 @@ This directory makes the force fields, stage settings and archived examples easy
 - [Corrected DMF figure and regeneration command](dmf/README.md).
 - [Historical ST uncertainty parsing and the distinction from GP noise](historical_uncertainty.md).
 
+## Additional GP analyses
+
+[Portable GP validation and sensitivity commands](analysis/README.md) include
+independent saved-result checks, final-force-field Jacobians and complete-set
+GP refits. [Tested environments](environments/README.md) distinguish lightweight
+analysis from the historical GP stack and untested simulation prerequisites.
+
 ## Parameter files
 
 Use [Opt_ES/FF_params](../Opt_ES/FF_params/README.md) to choose a named molecule and variant. `manifest.json` records the exact validation-table vector. Both variants are included; the recommended model differs by molecule. Verify files using `python3 reproducibility/check_inputs.py` from the repository root. This only reads inputs and performs numerical consistency checks.

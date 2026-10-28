@@ -34,10 +34,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--local-results", type=Path)
     parser.add_argument("--grouped-results", type=Path)
+    parser.add_argument("--global-results", type=Path)
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
-    if not (args.local_results or args.grouped_results):
-        parser.error("Supply --local-results and/or --grouped-results")
+    if not (args.local_results or args.grouped_results or args.global_results):
+        parser.error("Supply at least one regenerated result directory")
     checks = []
     if args.local_results:
         checks.append(compare(REFERENCE / "local_GP_predictions.csv", args.local_results / "local_GP_predictions.csv",
@@ -65,6 +66,16 @@ def main():
                 np.testing.assert_allclose(a, b, rtol=1e-8, atol=1e-10)
                 maximum = max(maximum, float(np.max(np.abs(a - b))))
             checks.append(dict(file=path.name, max_absolute_difference=maximum))
+    if args.global_results:
+        root = Path(__file__).resolve().parents[2]
+        for path in sorted((root / "Build_GPs/analysis").glob("*/*_iters/sens_approx/sens_approx*/sing_val_*.csv")):
+            relative = path.relative_to(root)
+            checks.append(compare(path, args.global_results / relative))
+            ranking = path.with_name(path.name.replace("sing_val_", "param_rank_"))
+            # Singular-vector signs are arbitrary; compare the named q_j scores
+            # rather than raw signed basis vectors.
+            checks.append(compare(ranking, args.global_results / ranking.relative_to(root),
+                                  columns=["sensitivity_score"], keys=["param_rank"]))
     args.output_dir.mkdir(parents=True, exist_ok=True)
     report = dict(checks=checks, tolerances=dict(rtol=1e-8, atol=1e-10),
                   maximum_absolute_difference=max(c["max_absolute_difference"] for c in checks),

@@ -1,0 +1,14 @@
+# Tested direct dependencies in the existing macOS arm64 Python 3.10.21 environment.
+# This is not a claim that a fresh GP environment was installed and verified.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.2
+matplotlib==3.10.9
+scikit-learn==1.7.2
+gpflow==2.9.1
+tensorflow-macos==2.15.0; sys_platform == "darwin" and platform_machine == "arm64"
+tensorflow==2.15.0; sys_platform != "darwin" or platform_machine != "arm64"
+tensorflow-probability==0.23.0
+unyt==3.1.0
+thermo==0.6.1
+setuptools==80.10.2

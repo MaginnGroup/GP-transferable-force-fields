@@ -25,7 +25,7 @@ parameters are ranked.
 
 Run from the repository root::
 
-    python make_svd_sensitivity.py
+    python make_svd_sensitivity.py --output-dir /tmp/es-ffo-global
 
 This module deliberately depends only on numpy/pandas/tensorflow/gpflow (via the
 pickled models) and the repository's own helpers, so the analysis can be
@@ -170,7 +170,7 @@ def write_results(result, mol_name, prop_name, mode, repo_root=REPO_ROOT):
     return sens_dir
 
 
-def run_sensitivity_analysis(mol_names=None, repo_root=REPO_ROOT, verbose=True):
+def run_sensitivity_analysis(mol_names=None, repo_root=REPO_ROOT, verbose=True, output_root=None):
     """Run the full analysis and write every output file. Returns the results."""
     mol_names = list(mol_names or MOL_NAMES)
     molec_dict = esolvs.make_dict(mol_names)
@@ -190,7 +190,7 @@ def run_sensitivity_analysis(mol_names=None, repo_root=REPO_ROOT, verbose=True):
             )
             for mode in MODES:
                 result = decompose(jacobian, input_names, mode)
-                write_results(result, mol_name, prop_name, mode, repo_root)
+                write_results(result, mol_name, prop_name, mode, output_root or repo_root)
                 ranks[mode][prop_name] = result["ranked_names"]
                 q_vals[mode][prop_name] = result["ranked_q"]
                 all_results[(mol_name, prop_name, mode)] = result
@@ -201,7 +201,7 @@ def run_sensitivity_analysis(mol_names=None, repo_root=REPO_ROOT, verbose=True):
                 )
 
         # Per-molecule summary table of the rankings for both properties
-        analysis_dir = os.path.join(repo_root, "Build_GPs", "analysis", mol_name)
+        analysis_dir = os.path.join(output_root or repo_root, "Build_GPs", "analysis", mol_name)
         for mode in MODES:
             suffix = "_wo_temp" if mode == "wo_temp" else ""
             rank_table = pd.DataFrame(
@@ -221,4 +221,8 @@ def run_sensitivity_analysis(mol_names=None, repo_root=REPO_ROOT, verbose=True):
 
 
 if __name__ == "__main__":
-    run_sensitivity_analysis()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", help="Write decompositions under a separate root, preserving source CSVs")
+    args = parser.parse_args()
+    run_sensitivity_analysis(output_root=args.output_dir)

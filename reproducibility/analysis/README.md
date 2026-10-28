@@ -34,6 +34,7 @@ change the physical-unit conversion slightly.
 python reproducibility/analysis/inspect_saved_models.py --output-dir /tmp/es-ffo-model-settings
 python reproducibility/analysis/local_estimability.py inventory --output-dir /tmp/es-ffo-inventory
 python reproducibility/analysis/local_estimability.py local --output-dir /tmp/es-ffo-local
+python make_svd_sensitivity.py --output-dir /tmp/es-ffo-global
 ```
 
 The inventory checks full-precision vectors against the rounded manuscript
@@ -78,13 +79,15 @@ nominal predictive coverage, not replicate-SD coverage or a parameter interval.
 Compare the newly generated results independently:
 
 ```sh
-python reproducibility/analysis/verify_gp_reruns.py --local-results /tmp/es-ffo-local --grouped-results /tmp/es-ffo-grouped --output-dir /tmp/es-ffo-gp-check
+python reproducibility/analysis/verify_gp_reruns.py --local-results /tmp/es-ffo-local --global-results /tmp/es-ffo-global --grouped-results /tmp/es-ffo-grouped --output-dir /tmp/es-ffo-gp-check
 ```
 
 The comparator uses relative tolerance 1e-8 and absolute tolerance 1e-10,
 checks row identities, and excludes runtime seconds and optimizer prose.
 The tested existing macOS/GPflow environment reproduced all 82 compared files
-exactly, including 30 sets of selected fitted parameters. Other numerical
+exactly, including 30 sets of selected fitted parameters. Separately regenerated
+sampled-domain singular values and rankings matched within 4.6e-13 absolute
+difference across 48 files. Other numerical
 backends can converge differently; a failed comparison must be investigated
 and reported rather than silently replacing the manuscript reference results.
 
