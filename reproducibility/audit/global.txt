@@ -1,0 +1,14 @@
+DEC   liq_density  N= 2000 GP=Build_GPs/analysis/DEC/ld_iters/iter-2/gp_models.pkl
+DEC   surf_tens    N=  125 GP=Build_GPs/analysis/DEC/vle_iters/iter-1/gp_models.pkl
+DMF   liq_density  N= 2000 GP=Build_GPs/analysis/DMF/ld_iters/iter-2/gp_models.pkl
+DMF   surf_tens    N=  125 GP=Build_GPs/analysis/DMF/vle_iters/iter-1/gp_models.pkl
+DMSO  liq_density  N= 2000 GP=Build_GPs/analysis/DMSO/ld_iters/iter-2/gp_models.pkl
+DMSO  surf_tens    N=  125 GP=Build_GPs/analysis/DMSO/vle_iters/iter-1/gp_models.pkl
+EG    liq_density  N= 2000 GP=Build_GPs/analysis/EG/ld_iters/iter-2/gp_models.pkl
+EG    surf_tens    N=  125 GP=Build_GPs/analysis/EG/vle_iters/iter-1/gp_models.pkl
+Gly   liq_density  N= 6983 GP=Build_GPs/analysis/Gly/ld_iters/iter-7/gp_models.pkl
+Gly   surf_tens    N=  125 GP=Build_GPs/analysis/Gly/vle_iters/iter-1/gp_models.pkl
+MeOH  liq_density  N= 2450 GP=Build_GPs/analysis/MeOH/ld_iters/iter-3/gp_models.pkl
+MeOH  surf_tens    N=  125 GP=Build_GPs/analysis/MeOH/vle_iters/iter-1/gp_models.pkl
+<HOME>/opt/anaconda3/envs/gpbo-dev/lib/python3.10/site-packages/gpflow/versions.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources

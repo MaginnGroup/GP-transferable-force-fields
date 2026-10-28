@@ -1,0 +1,1 @@
+Checked 12 variants and 380 property/state points; 0 raw/processed discrepancies. No simulations run.

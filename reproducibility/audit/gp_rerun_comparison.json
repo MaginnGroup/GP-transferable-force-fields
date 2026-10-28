@@ -1,0 +1,1400 @@
+{
+  "checks": [
+    {
+      "file": "local_GP_predictions.csv",
+      "rows": 120,
+      "columns": [
+        "temperature",
+        "target",
+        "GP_mean",
+        "GP_latent_sd",
+        "objective_sd_floor",
+        "relative_uncertainty_used"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "local_rank_summary.csv",
+      "rows": 48,
+      "columns": [
+        "rows",
+        "free_parameters",
+        "rank_1e-04",
+        "rank_1e-06",
+        "rank_1e-08",
+        "s_max",
+        "s_min",
+        "condition_full",
+        "condition_retained_1e6"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_Base_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_Base_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_Base_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_Base_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_GPOptimized_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_GPOptimized_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_GPOptimized_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_GPOptimized_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_C3",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_C3",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_Base_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_Base_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_Base_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_Base_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_GPOptimized_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_GPOptimized_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_GPOptimized_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_GPOptimized_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_N1",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_N1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_Base_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_Base_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_Base_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_Base_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_GPOptimized_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_GPOptimized_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_GPOptimized_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_GPOptimized_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "sigma_S1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1",
+        "epsilon_S1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_Base_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_Base_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_Base_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_Base_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_GPOptimized_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_GPOptimized_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_GPOptimized_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_GPOptimized_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_Base_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_Base_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_Base_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_Base_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_GPOptimized_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_GPOptimized_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_GPOptimized_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_GPOptimized_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_C2",
+        "sigma_H1",
+        "sigma_H2",
+        "sigma_O1",
+        "sigma_O2",
+        "epsilon_C1",
+        "epsilon_C2",
+        "epsilon_H1",
+        "epsilon_H2",
+        "epsilon_O1",
+        "epsilon_O2"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_Base_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_Base_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_Base_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_Base_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_GPOptimized_combined_measurement_plus_GP_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_GPOptimized_combined_objective_diagonal_weighted_jacobian.csv",
+      "rows": 10,
+      "columns": [
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_GPOptimized_liq_density_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_GPOptimized_surf_tens_weighted_jacobian.csv",
+      "rows": 5,
+      "columns": [
+        "temperature",
+        "sigma_C1",
+        "sigma_H1",
+        "sigma_O1",
+        "epsilon_C1",
+        "epsilon_H1",
+        "epsilon_O1"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "grouped_validation_predictions_3starts.csv",
+      "rows": 745,
+      "columns": [
+        "fold",
+        "row",
+        "group_id",
+        "scaled_target",
+        "scaled_mean",
+        "scaled_predictive_variance",
+        "physical_target",
+        "physical_mean",
+        "physical_predictive_sd"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "grouped_validation_metrics_3starts.csv",
+      "rows": 36,
+      "columns": [
+        "train_rows",
+        "test_rows",
+        "iterations",
+        "MAE",
+        "RMSE",
+        "coverage95",
+        "mean_predictive_sd",
+        "training_loss",
+        "selected_restart",
+        "white_noise_variance_scaled"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_fold0_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_fold1_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_fold2_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_fold3_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "MeOH_fold4_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_fold0_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_fold1_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_fold2_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_fold3_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "EG_fold4_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_fold0_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_fold1_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_fold2_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_fold3_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "Gly_fold4_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_fold0_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_fold1_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_fold2_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_fold3_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMF_fold4_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_fold0_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_fold1_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_fold2_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_fold3_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DMSO_fold4_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_fold0_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_fold1_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_fold2_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_fold3_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "DEC_fold4_parameters.json",
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 15,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 15,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 5.684341886080802e-14
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 14,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 14,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 5.684341886080802e-14
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 15,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 15,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 14,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 14,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 13,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 13,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 12,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 12,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 3.410605131648481e-13
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 13,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 13,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.842170943040401e-14
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 12,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 12,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.842170943040401e-14
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 9,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 9,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 8,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 8,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 9,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 9,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.842170943040401e-14
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 8,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 8,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 1.4210854715202004e-14
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 9,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 9,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 8,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 8,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.2737367544323206e-13
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 9,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 9,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 3.552713678800501e-15
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 8,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 8,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.842170943040401e-14
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 17,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 17,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 16,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 16,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 17,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 17,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 1.1368683772161603e-13
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 16,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 16,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.2737367544323206e-13
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 9,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 9,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 2.842170943040401e-14
+    },
+    {
+      "file": "sing_val_liq_density.csv",
+      "rows": 8,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_liq_density.csv",
+      "rows": 8,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 5.684341886080802e-14
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 9,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 9,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 7.105427357601002e-15
+    },
+    {
+      "file": "sing_val_surf_tens.csv",
+      "rows": 8,
+      "columns": [
+        "sing_value"
+      ],
+      "max_absolute_difference": 0.0
+    },
+    {
+      "file": "param_rank_surf_tens.csv",
+      "rows": 8,
+      "columns": [
+        "sensitivity_score"
+      ],
+      "max_absolute_difference": 5.329070518200751e-15
+    }
+  ],
+  "tolerances": {
+    "rtol": 1e-08,
+    "atol": 1e-10
+  },
+  "maximum_absolute_difference": 4.547473508864641e-13,
+  "limits": "Compares regenerated analysis results, not molecular simulations. Runtime seconds and optimizer messages excluded."
+}

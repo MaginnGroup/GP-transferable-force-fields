@@ -42,7 +42,7 @@ def buildGP(x_train, y_train, gpConfig, retrain = 0):
                 Whether to use a White kernel (gpflow.kernels.White).
                 The default is True.
             . trainLikelihood : boolean
-                Whether to treat the variance of the likelihood of the modeal
+                Whether to treat the variance of the likelihood of the model
                 as a trainable (or fitting) parameter. If False, this value is
                 fixed at 10^-5.
                 The default is True.
@@ -106,12 +106,12 @@ def buildGP(x_train, y_train, gpConfig, retrain = 0):
         #Set initial noise variance as untrainable if the noise_var is not the same as white_var
         if noise_var != white_var:
             gpflow.utilities.set_trainable(gpKernel.kernels[-1].variance,False)
-        noise_variance = 1e-5 #This value is the GP jitter default
+        noise_variance = 1e-5 #Gaussian likelihood variance; numerical Cholesky jitter is separate
     else:
         if noise_var != white_var:
             noise_variance = noise_var #This would be the Eotvos scaled variance
         else:
-            noise_variance = 1e-5 #This value is the GP jitter default
+            noise_variance = 1e-5 #Gaussian likelihood variance; numerical Cholesky jitter is separate
             
     # Add Mean function
     if typeMeanFunc == 'Zero':
@@ -214,7 +214,7 @@ def run_gpflow_scipy(x_train, y_train, gpConfig, restarts = 1):
                 Whether to use a White kernel (gpflow.kernels.White).
                 The default is True.
             . trainLikelihood : boolean
-                Whether to treat the variance of the likelihood of the modeal
+                Whether to treat the variance of the likelihood of the model
                 as a trainable (or fitting) parameter. If False, this value is
                 fixed at 10^-5.
                 The default is True.

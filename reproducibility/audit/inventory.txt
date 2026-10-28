@@ -1,0 +1,20 @@
+molecule  selected_rows  minimum_rmse  maximum_rmse   max_mse                             temperatures  n_free  n_listed
+    MeOH             25      2.272963      9.785871 95.763278      [200.0, 250.0, 300.0, 350.0, 400.0]       6         8
+      EG             25      1.650731      9.877604 97.567055 [378.15, 383.15, 393.15, 403.15, 413.15]       6         8
+     Gly             25      3.103069      9.959829 99.198191 [293.15, 303.15, 313.15, 323.15, 333.15]      12        16
+     DMF             25      1.238015      9.820358 96.439434 [308.15, 313.15, 318.15, 323.15, 328.15]      12        12
+    DMSO             25      1.940745      9.811253 96.260678 [313.15, 318.15, 323.15, 328.15, 333.15]       8         8
+     DEC             25      2.090656      9.861579 97.250745 [273.18, 293.16, 313.19, 333.18, 353.19]      14        14
+molecule    property  train_rows  test_rows  train_parameter_sets  test_parameter_sets  shared_parameter_sets  test_sets_unseen                                           model_source
+    MeOH liq_density        1537        385                   399                  249                    246                 3  Build_GPs/analysis/MeOH/ld_iters/iter-3/gp_models.pkl
+    MeOH   surf_tens         100         25                    25                   16                     16                 0 Build_GPs/analysis/MeOH/vle_iters/iter-1/gp_models.pkl
+      EG liq_density        1243        311                   313                  202                    201                 1    Build_GPs/analysis/EG/ld_iters/iter-2/gp_models.pkl
+      EG   surf_tens         100         25                    25                   16                     16                 0   Build_GPs/analysis/EG/vle_iters/iter-1/gp_models.pkl
+     Gly liq_density        4016       1005                   913                  636                    635                 1   Build_GPs/analysis/Gly/ld_iters/iter-7/gp_models.pkl
+     Gly   surf_tens         100         25                    25                   16                     16                 0  Build_GPs/analysis/Gly/vle_iters/iter-1/gp_models.pkl
+     DMF liq_density        1577        395                   396                  259                    257                 2   Build_GPs/analysis/DMF/ld_iters/iter-2/gp_models.pkl
+     DMF   surf_tens         100         25                    25                   16                     16                 0  Build_GPs/analysis/DMF/vle_iters/iter-1/gp_models.pkl
+    DMSO liq_density        1584        397                   397                  257                    256                 1  Build_GPs/analysis/DMSO/ld_iters/iter-2/gp_models.pkl
+    DMSO   surf_tens         100         25                    25                   16                     16                 0 Build_GPs/analysis/DMSO/vle_iters/iter-1/gp_models.pkl
+     DEC liq_density        1492        373                   391                  253                    251                 2   Build_GPs/analysis/DEC/ld_iters/iter-2/gp_models.pkl
+     DEC   surf_tens          96         24                    24                   15                     15                 0  Build_GPs/analysis/DEC/vle_iters/iter-1/gp_models.pkl

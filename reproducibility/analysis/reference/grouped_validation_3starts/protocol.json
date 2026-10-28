@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "folds": 5,
+  "maxiter": 2000,
+  "initialization": "3 starts: ones first; independent seeded broad kernel draws next, all zero linear coefficients",
+  "selection": "published Matern32 ST kernel, archived mean form; no held-out model selection",
+  "noise": "fixed white Eotvos MAD recomputed using training ST groups only where original fixed; otherwise trained white initialized at 1; Gaussian fixed 1e-5",
+  "targets": "archived scaled sim_surf_tens_y_train/y_test, recombined; no original replacement"
+}

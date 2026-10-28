@@ -641,7 +641,7 @@ mol_names = ["EG", "MeOH", "Gly", "DMSO", "DMF", "DEC"] #Change me as needed
 
 ###Make correlation figures for LD and VLE iterations on a per molecule basis
 
-os.chdir("/groups/ed/group_members/Montana_Carlozo/ES-FFO/")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 matplotlib.rc("font", family="sans-serif")
 matplotlib.rc("font", serif="Arial")
 #Make pdf 

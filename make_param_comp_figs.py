@@ -40,7 +40,7 @@ def set_ticks_for_axis(ax, param_bounds, nticks):
     ax.tick_params("y", which="major", length=14)
     ax.tick_params("x", pad=15)
 
-os.chdir("/groups/ed/group_members/Montana_Carlozo/ES-FFO/Opt_ES")
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Opt_ES"))
 
 
 molec_names = ["EG", "MeOH", "Gly", "DMSO", "DMF", "DEC"] #Change me as needed

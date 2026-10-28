@@ -1,0 +1,39 @@
+{
+  "source_sha256": {
+    "Opt_ES/analysis/at_00/MeOH/ExpVal/opt_res/ms_val_no_opt/raw_data.csv": "72d6a8e48bd14b34f0f0f4ba394ef4541f6496082899e99991180848a3ef20e3",
+    "Opt_ES/analysis/at_00/MeOH/ExpVal/opt_res/ms_val_no_opt/ms_data.csv": "0c10a376a36c9862097aa1cad39bf2f8f8485665ba814c72f030d19adeaa17c5",
+    "Opt_ES/analysis/at_00/MeOH/ExpVal/opt_res/ms_val_opt/raw_data.csv": "8df425be2fa56b1f106a1b1824a05117c0105f5b1dd70122b98f48e13a574b0e",
+    "Opt_ES/analysis/at_00/MeOH/ExpVal/opt_res/ms_val_opt/ms_data.csv": "90c52b273f49a4037280d3c00954d2e5c1aaade138dbf88760c06a2f2a594253",
+    "Opt_ES/analysis/at_00/EG/ExpVal/opt_res/ms_val_no_opt/raw_data.csv": "27770a6fe78a0480f253b3a9db07e074397b8a225f2ddd334f111e86ecef457d",
+    "Opt_ES/analysis/at_00/EG/ExpVal/opt_res/ms_val_no_opt/ms_data.csv": "48881920be11e70eb2bb9c5b4f49471c9e16230ec00e9a84c1dd81e676c387d5",
+    "Opt_ES/analysis/at_00/EG/ExpVal/opt_res/ms_val_opt/raw_data.csv": "ab23296104cffc0bbe59b9428573ed76729c8bc43a0e0698f90ec5481b8421c6",
+    "Opt_ES/analysis/at_00/EG/ExpVal/opt_res/ms_val_opt/ms_data.csv": "0dfd7da17574140f27f19eced54d05cec6e2db59fcb6dc1b77f89950f620a5c2",
+    "Opt_ES/analysis/at_00/Gly/ExpVal/opt_res/ms_val_no_opt/raw_data.csv": "a551ee2e887554f30c7049f7aea8c547d2a68fb0f1d4ce6b59f85850b940ceda",
+    "Opt_ES/analysis/at_00/Gly/ExpVal/opt_res/ms_val_no_opt/ms_data.csv": "24a30035e67fcba90a7a8ce5de20b71288fa11323b6f4e5924d6ef04c03b352f",
+    "Opt_ES/analysis/at_00/Gly/ExpVal/opt_res/ms_val_opt/raw_data.csv": "2d4db60ce64dc15e27d6774bfeddd764d21b13fb93d2b2bcc87bb76a08f8203a",
+    "Opt_ES/analysis/at_00/Gly/ExpVal/opt_res/ms_val_opt/ms_data.csv": "29d60f697912c4384c65d7d5fd0ea0894f2341e04f1c3319499e3c4416b7ef70",
+    "Opt_ES/analysis/at_00/DMF/ExpVal/opt_res/ms_val_no_opt/raw_data.csv": "1d778d56fcb18cc1dbaac28fcb6654a5c083c0ec8293a836988617de7d3585a8",
+    "Opt_ES/analysis/at_00/DMF/ExpVal/opt_res/ms_val_no_opt/ms_data.csv": "bd56e6efe1d49f18cc9ceeeb5a293b81ca2204e04d348c32a97984ac12de64f7",
+    "Opt_ES/analysis/at_00/DMF/ExpVal/opt_res/ms_val_opt/raw_data.csv": "0ececa8378b5edfa63a631f3643f42b681b4a64f420bfa8a76ecdd74cc8cb45f",
+    "Opt_ES/analysis/at_00/DMF/ExpVal/opt_res/ms_val_opt/ms_data.csv": "a76e3f1f44bae50e55cd3bfd4e454df7e82dffa02ead4aea7cee08b4194b15e8",
+    "Opt_ES/analysis/at_00/DMSO/ExpVal/opt_res/ms_val_no_opt/raw_data.csv": "2815c3a390690c720047bded43aa2c670443b97c8303e023aa76e1b710536858",
+    "Opt_ES/analysis/at_00/DMSO/ExpVal/opt_res/ms_val_no_opt/ms_data.csv": "ef2e34fd796be7617a2e1a71c07ebd39111c82c6b2a21a5a2ac0507c0cac1407",
+    "Opt_ES/analysis/at_00/DMSO/ExpVal/opt_res/ms_val_opt/raw_data.csv": "43d3d5b35a1a1935425763c4cde8f1cab5ed6d29e75432fd7ab53dd5fb92c022",
+    "Opt_ES/analysis/at_00/DMSO/ExpVal/opt_res/ms_val_opt/ms_data.csv": "685df72209f6c912e955242bc6da99158de8c3b6315f14776acca2cf51ccc4d6",
+    "Opt_ES/analysis/at_00/DEC/ExpVal/opt_res/ms_val_no_opt/raw_data.csv": "4cde0bd6a45e2a52b4accd2f6d96606d95b72e75f72f60c7919de4065762c805",
+    "Opt_ES/analysis/at_00/DEC/ExpVal/opt_res/ms_val_no_opt/ms_data.csv": "53ca8287fcc17dc1773b730711cd92ba9c95aec0b3e6a9d8fe7f79c39ca69cc2",
+    "Opt_ES/analysis/at_00/DEC/ExpVal/opt_res/ms_val_opt/raw_data.csv": "0e7ae833c5cb259871323b420ff4c3fe8c48e11376edb5061f0d1c8c7fdf66a8",
+    "Opt_ES/analysis/at_00/DEC/ExpVal/opt_res/ms_val_opt/ms_data.csv": "598940d2eb821ceef22d28a44d3bd53890d861e74938fcc6c4870cc45a95911a"
+  },
+  "discrepancies": [],
+  "checked_variants": 12,
+  "property_state_points": 380,
+  "summary_definition": "Finite retained values; arithmetic mean, population SD (ddof=0), 1.96*SD bars. Not confidence intervals for means.",
+  "comparison": "Each retained raw property compared with corresponding sim_* processed row, rtol=atol=1e-12; summaries are independently recomputed, not stored-summary comparisons.",
+  "not_checked": [
+    "Trajectory equilibration and physical validity",
+    "GROMACS/Cassandra execution",
+    "Missing result causes",
+    "Critical-point fitting"
+  ]
+}

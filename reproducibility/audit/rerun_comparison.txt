@@ -1,0 +1,1 @@
+Compared 130 regenerated result files; maximum absolute difference 4.54747e-13.

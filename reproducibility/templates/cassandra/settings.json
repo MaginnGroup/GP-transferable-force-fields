@@ -1,0 +1,42 @@
+{
+  "provenance": "Opt_ES/gemc_val_opt/project.py:_get_custom_args and GEMC stages",
+  "executable_cassandra_input": false,
+  "vdw_style": "lj",
+  "cutoff_style": "cut_tail",
+  "vdw_cutoff_box1_angstrom": 12.0,
+  "charge_style": "ewald",
+  "charge_cutoff_box1_angstrom": 12.0,
+  "ewald_accuracy": 1e-05,
+  "mixing_rule": "lb",
+  "vdw_and_charge_cutoff_box2_angstrom": "0.475 * pre-GEMC vapor-box length in angstrom; rounded in nm to5decimal places before unitconversion",
+  "units": "sweeps",
+  "steps_per_sweep_nvt_npt": 640,
+  "steps_per_sweep_gemc": 800,
+  "coord_freq_sweeps": 500,
+  "prop_freq_sweeps": 10,
+  "stages": [
+    {
+      "ensemble": "nvt",
+      "initial_sweeps": 2500
+    },
+    {
+      "ensemble": "npt",
+      "pressure": "RD2 vapor pressure at requested temperature",
+      "initial_sweeps": 5000
+    },
+    {
+      "ensemble": "gemc",
+      "phase": "equilibration",
+      "initial_sweeps": 50000
+    },
+    {
+      "ensemble": "gemc",
+      "phase": "production",
+      "initial_sweeps": 100000
+    }
+  ],
+  "missing": [
+    "Generated Cassandra .inp and fragment libraries absent from archived local examples",
+    "MSER/checkpoint logic can extend equilibration and alter initialization after failures; use project.py for those decisions"
+  ]
+}
