@@ -1,8 +1,8 @@
 # Additional GP validation and sensitivity analyses
 
-These commands use committed public data and saved GPs. They do not require a
-manuscript checkout, the private development repository, REFPROP, signac jobs,
-GROMACS or Cassandra. Write regenerated results to a separate directory.
+These commands use committed public data and saved GPs. They do not require
+REFPROP, signac jobs, GROMACS or Cassandra. Write regenerated results to a
+separate directory.
 Use the [lightweight or GP environment](../environments/README.md) as indicated.
 
 ## Verify saved numerical results (lightweight environment)
@@ -18,9 +18,8 @@ recalculates ranks for all 48 saved local Jacobian blocks and checks 24 public
 sampled-domain SVD decompositions for orthonormal right vectors and consistent
 singular-value-weighted rankings. No fitted model is loaded by this command.
 
-The fixed [reference data](reference/) come from the retained v13 audit package
-in `dowlinglab/ESS-FO-Audit`, checkpoint `2256590`. They include the final
-**three-start** grouped results, not the earlier exploratory one-start run.
+The fixed [reference data](reference/) contain the final **three-start** grouped
+validation results and local sensitivity calculations used for comparison.
 `grouped_validation_3starts/protocol.json` gives the fit protocol. The
 manuscript-parameter reference contains the rounded approved values; the exact
 validation vectors remain in the original public CSVs. `model_specs.json`

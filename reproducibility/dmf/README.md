@@ -17,14 +17,12 @@ The script locates this public repository relative to its own path. It also
 accepts `--repo-root` explicitly. It reads only committed public files and
 writes PNG, SVG, numerical plotted data, and source hashes to the output
 directory. No molecular simulation software, GP model loading, REFPROP
-installation, sibling private repository or manuscript checkout is required.
+installation or manuscript checkout is required.
 
 The generator checks candidate IDs 11, 13, 15, 17 and 22, their five
 temperatures, and all 25 numerical rows against
 [reference_figure_data.csv](reference_figure_data.csv) at relative and absolute
-tolerances of 1e-12. That table and the lettering/layout originate from audit
-commit `0e2766c` in `dowlinglab/ESS-FO-Audit`. The figure was approved for the
-manuscript in commit `a78d6b5` of its separate Overleaf repository.
+tolerances of 1e-12. That table records the figure’s numerical reference values.
 
 [provenance.json](provenance.json) records the public input hashes and tested
 plotting package versions. The regenerated PNG was also compared pixel by
