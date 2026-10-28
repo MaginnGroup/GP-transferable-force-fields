@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "Build_GPs/analysis/DMF/vle_iters/all_results.csv": "0670177bf88378dde15bc1bd7af9819b5ca9436432800b692686ba20eb13a266",
+    "Build_GPs/analysis/DMF/vle_iters/iter-1/pareto-params.csv": "7d72197b46614571398398798df785c0cfaa4dcdae4d2736f721394fab7ad92d",
+    "utils/molec_class_files/esolvs.py": "3dd384686d3dd90993fb620321586f71c4fd1d86acdbbe52081cc61d1eee09bd"
+  },
+  "formula": "corrected_error_estimate_mN_m = 20 * stored_uncertainty**2",
+  "bar_multiplier": 1.96,
+  "points": 25,
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.11.2"
+  },
+  "verification": "All 25 plotted rows agree with approved reference_figure_data.csv at rtol=atol=1e-12",
+  "note": "Only maximum GROMACS error estimate is recoverable; not calibrated 95% CI."
+}

@@ -2,6 +2,12 @@
 
 This directory makes the force fields, stage settings and archived examples easy to find. It does not contain complete trajectories or every executed job. The manuscript used GROMACS 2022.1 with PLUMED 2.8, Cassandra 1.3.1, mBuild/Foyer, MoSDeF-Cassandra and the Signac workflow; dependency/environment files and project generators remain in the repository root and the original project directories.
 
+## Retained validation results and corrected DMF plot
+
+- [Usable replicate counts, means, and population-SD bars](validation/README.md).
+- [Corrected DMF figure and regeneration command](dmf/README.md).
+- [Historical ST uncertainty parsing and the distinction from GP noise](historical_uncertainty.md).
+
 ## Parameter files
 
 Use [Opt_ES/FF_params](../Opt_ES/FF_params/README.md) to choose a named molecule and variant. `manifest.json` records the exact validation-table vector. Both variants are included; the recommended model differs by molecule. Verify files using `python3 reproducibility/check_inputs.py` from the repository root. This only reads inputs and performs numerical consistency checks.
