@@ -367,7 +367,7 @@ threshold = 10
 mol_names = ["EG", "MeOH", "Gly", "DMSO", "DMF", "DEC"] #Change me as needed
 
 #change directory
-os.chdir("/groups/ed/group_members/Montana_Carlozo/ES-FFO/")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 matplotlib.rc("font", family="sans-serif")
 matplotlib.rc("font", serif="Arial")

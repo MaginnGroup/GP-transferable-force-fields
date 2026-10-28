@@ -30,7 +30,7 @@ def determine_iter(molec_name):
         iter = base[-1]
     return int(iter) - 1
 
-os.chdir("/groups/ed/group_members/Montana_Carlozo/ES-FFO/Build_GPs")
+os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Build_GPs"))
 
 ### Get pareto set info for IFT iters for each molecule
 

@@ -65,8 +65,11 @@ any parsed settings.
 
 To repeat the audit, use [run_audit.py](../run_audit.py) with the
 [documented environments and command](../environments/README.md#run-the-audit-as-one-command).
-Subsequent report/documentation commits do not change the tested scientific
-code or original results. The PR diff preserves all original simulation CSVs
+Subsequent report/documentation commits do not change the audited numerical
+code or original results. Four historical plotting launchers now resolve their
+working directories from their own file locations instead of a collaborator's
+cluster directory. Only directory selection changed; their full workflow plots
+were not rerun and are not covered by the numerical pass claims here. The PR diff preserves all original simulation CSVs
 and saved GP pickles. The corrected DMF data are derived outputs with explicit
 provenance, not replacements for historical CSV fields.
 

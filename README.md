@@ -398,7 +398,7 @@ Note: Step 2 operation IFT runs multiple operations in series. Alternatively, th
      python recompute_metrics_all.py
      python generate_tables.py
    ``` 
-Note: The second set of jobs create final figures for the SI and main text. Alternatively, these can be created by running the jupyter notebook `create_analysis_figs.ipynb`.
+These are historical cluster plotting commands and require the original workflow dependencies and available inputs. They were not executed by the retained-results audit. The notebook `create_analysis_figs.ipynb` is also historical. Use the reproducibility task map above for the current validated DMF and GP-analysis commands; the pooled plots are omitted from the revised paper.
 
 ### Known Issues
 The instructions outlined above seem to be system-dependent. In some cases, users have the following error:
