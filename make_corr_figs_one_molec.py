@@ -479,20 +479,28 @@ def plot_corr_one_molec(data, bounds, data_class, col_names, n_axis, x_vals, mod
     return fig
 
 def plot_corr_matrix_one_molec(df_analyze, data_class, x_min_sig, x_max_sig, x_min_eps, x_max_eps, mode, mol_name):
+    if mode3 in ("scl", "from_scl"):
+        sigma_label = r"$\Sigma \sigma$" + "\nbounds-scaled\n(dimensionless)"
+        epsilon_label = r"$\Sigma \epsilon$" + "\nbounds-scaled\n(dimensionless)"
+    else:
+        sigma_label = r"$\Sigma \sigma$/A"
+        epsilon_label = r"$\Sigma \frac{\epsilon}{k_B}$/K"
+
+    axis_label_size = 22 if mode3 in ("scl", "from_scl") else 32
     import matplotlib.pyplot as plt
     fig2, axes = plt.subplots(1, 3, figsize=(15,5))
     ax1, ax2, ax3 = axes.flat[:3]
     if mode == "ld":
         for i in range(len(df_analyze)):
             ax1.plot(df_analyze["sigma_sum"].iloc[i], df_analyze["mpd_liq_density"].iloc[i], 'o', label="Liquid Density")
-        ax1.set_xlabel(r"$\Sigma \sigma$/A", fontsize=32)
+        ax1.set_xlabel(sigma_label, fontsize=axis_label_size)
         ax1.set_ylabel(r"MPD $\rho_l$/%", fontsize=32)
         ax1.tick_params(axis='both', which='major', labelsize=18)
         ax1.set_xlim(x_min_sig, x_max_sig)
 
         for i in range(len(df_analyze)):
             ax2.plot(df_analyze["epsilon_sum"].iloc[i], df_analyze["mpd_liq_density"].iloc[i], 'o', label="Liquid Density")
-        ax2.set_xlabel(r"$\Sigma \frac{\epsilon}{k_B}$/K", fontsize=32)
+        ax2.set_xlabel(epsilon_label, fontsize=axis_label_size)
         ax2.set_ylabel(r"MPD $\rho_l$/%", fontsize=32)
         ax2.tick_params(axis='both', which='major', labelsize=18)
         ax2.set_xlim(x_min_eps, x_max_eps)
@@ -500,13 +508,13 @@ def plot_corr_matrix_one_molec(df_analyze, data_class, x_min_sig, x_max_sig, x_m
     if mode == "vle":
         for i in range(len(df_analyze)):
             ax2.plot(df_analyze["epsilon_sum"].iloc[i], df_analyze["mpd_surf_tens"].iloc[i], 'o', label="Surface Tension")
-        ax2.set_xlabel(r"$\Sigma \frac{\epsilon}{k_B}$/K", fontsize=32)
+        ax2.set_xlabel(epsilon_label, fontsize=axis_label_size)
         ax2.set_ylabel(r"MPD $\gamma$/%", fontsize=32)
         ax2.tick_params(axis='both', which='major', labelsize=18)
         ax2.set_xlim(x_min_eps, x_max_eps)
         for i in range(len(df_analyze)):
             ax1.plot(df_analyze["sigma_sum"].iloc[i], df_analyze["mpd_surf_tens"].iloc[i], 'o', label="Surface Tension")
-        ax1.set_xlabel(r"$\Sigma \sigma$/A", fontsize=32)
+        ax1.set_xlabel(sigma_label, fontsize=axis_label_size)
         ax1.set_ylabel(r"MPD $\gamma$/%", fontsize=32)
         ax1.tick_params(axis='both', which='major', labelsize=18)
         ax1.set_xlim(x_min_sig, x_max_sig)
@@ -514,8 +522,8 @@ def plot_corr_matrix_one_molec(df_analyze, data_class, x_min_sig, x_max_sig, x_m
 
     for i in range(len(df_analyze)):
         ax3.plot(df_analyze["sigma_sum"].iloc[i], df_analyze["epsilon_sum"].iloc[i], 'o', label="Liquid Density")
-    ax3.set_xlabel(r"$\Sigma \sigma$/A", fontsize=32)
-    ax3.set_ylabel(r"$\Sigma \frac{\epsilon}{k_B}$/K", fontsize=32)
+    ax3.set_xlabel(sigma_label, fontsize=axis_label_size)
+    ax3.set_ylabel(epsilon_label, fontsize=axis_label_size)
     ax3.set_ylim(x_min_eps, x_max_eps)
     ax3.tick_params(axis='both', which='major', labelsize=18)
     ax3.set_xlim(x_min_sig, x_max_sig)
@@ -539,9 +547,9 @@ def plot_corr_matrix_one_molec(df_analyze, data_class, x_min_sig, x_max_sig, x_m
     for i, col in enumerate(corr_matrix.columns):
         # Map the current column name to the corresponding letter
         if "sigma_sum" in col:
-            rename_map[col] = r"$\Sigma \sigma$/A"
+            rename_map[col] = sigma_label
         elif "epsilon_sum" in col:
-            rename_map[col] = r"$\Sigma \frac{\epsilon}{k_B}$/K"
+            rename_map[col] = epsilon_label
         elif "mpd_liq_density" in col:
             rename_map[col] = "MPD " + r"$\rho_l$" + "/%"
         elif "mpd_surf_tens" in col:
@@ -598,9 +606,9 @@ def plot_corr_matrix_one_molec(df_analyze, data_class, x_min_sig, x_max_sig, x_m
     for i, col in enumerate(corr_matrix2.columns):
         # Map the current column name to the corresponding letter
         if "sigma_sum" in col:
-            rename_map[col] = r"$\Sigma \sigma$/A"
+            rename_map[col] = sigma_label
         elif "epsilon_sum" in col:
-            rename_map[col] = r"$\Sigma \frac{\epsilon}{k_B}$/K"
+            rename_map[col] = epsilon_label
         elif "mpd_liq_density" in col:
             rename_map[col] = "MPD " + r"$\rho_l$" + "/%"
         elif "mpd_surf_tens" in col:
@@ -621,8 +629,8 @@ def plot_corr_matrix_one_molec(df_analyze, data_class, x_min_sig, x_max_sig, x_m
     fig3, ax3 = plt.subplots(1, 1, figsize=(5,5))
     ax3.plot(df_analyze["sigma_sum"], df_analyze["epsilon_sum"], 'o', label="Successful Points", alpha = 0.5)
     ax3.plot(failure_points["sigma_sum"], failure_points["epsilon_sum"], 'o', label="Failed Points", alpha = 0.5)
-    ax3.set_xlabel(r"$\Sigma \sigma$/A", fontsize=32)
-    ax3.set_ylabel(r"$\Sigma \frac{\epsilon}{k_B}$/K", fontsize=32)
+    ax3.set_xlabel(sigma_label, fontsize=axis_label_size)
+    ax3.set_ylabel(epsilon_label, fontsize=axis_label_size)
     ax3.set_ylim(x_min_eps, x_max_eps)
     ax3.tick_params(axis='both', which='major', labelsize=18)
     ax3.set_xlim(x_min_sig, x_max_sig)
